@@ -11,8 +11,8 @@ button {
 
 body {
   font: #{$body-font-size}/1.4 $body-font;
-  color: $brand-gray-dark;
-  background-color: #fff;
+  color: $text-color;
+  background-color: $bg-color;
 }
 
 a {
@@ -25,16 +25,4 @@ a {
   }
 }
 
-// Horizontal lines
-//
-// TODO-MDO: Remove `.rule` from everywhere and replace with `<hr>`s
-hr,
-.rule {
-  height: 0;
-  margin: 15px 0;
-  overflow: hidden;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-  @include clearfix();
-}
+

@@ -11,10 +11,6 @@
 @import "partials/layout";
 @import "partials/utility";
 
-// Components
-@import "partials/buttons";
-
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -34,8 +30,9 @@ header {
 	}
 	h5 {
 		clear: none;
-		//position: absolute;
-		margin-top: -22px;
+		position: absolute;
+		top: 0;
+		right: 2%;
 	}
 }
 img {border: 1px solid $brand-blue;}
@@ -73,4 +70,8 @@ footer {
 			width: 100%;
 		}
 }
-//@media all and (min-width: 460) and (max-width: 980px) {
+/* @media all and (min-width: 600) and (max-width: 980px) {
+	header {
+		h5.text-right {float: left;}
+	}
+} */

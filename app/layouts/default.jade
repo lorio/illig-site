@@ -8,7 +8,9 @@ html.no-js(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='apple-touch-icon' href='apple-touch-icon.png')
     link(rel='icon' href='favicon.ico' type='image/ico')
-  
+    script(src='https://use.typekit.net/gaw1ryz.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
     // build:css styles/vendor.css
     // bower:css
     // endbower
@@ -28,16 +30,16 @@ html.no-js(lang='en')
     | <![endif]-->
     header
       .container
-        h1.text-center JOHN DRISCOLL ILLIG
+        h1.text-center John Driscoll Illig
         
-        h5.text-right: a(href='#') contact
+        h5: a(href='#') contact
 
     .container
       block content
 
     
-    footer
-      p.text-center  &copy; 2015 John Driscoll Illig
+    .footer
+      p.text-center &copy; 2015 John Driscoll Illig
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
