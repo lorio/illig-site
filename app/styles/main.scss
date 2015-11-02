@@ -29,14 +29,25 @@ header {
 		padding: 6px 0 0;
 	}
 	h5 {
-		clear: none;
+		//clear: none;
 		position: absolute;
 		top: 0;
 		right: 2%;
 	}
 }
+nav {
+	h5 {
+		clear: none;
+		position:absolute;
+		top:0;
+		left: 2%;
+	}
+}
 img {border: 1px solid $brand-blue;}
-figcaption {text-align: center;}
+figcaption {
+	text-align: center;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
