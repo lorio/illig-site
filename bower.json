@@ -1,12 +1,25 @@
 {
-  "name": "site",
-  "private": true,
+  "name": "johnilligart",
+  "main": [
+    "scripts/main.js",
+    "styles/main.scss"
+    ],
   "dependencies": {
     "modernizr": "~2.8.1",
-    "jquery": "2.1.4"
+    "jquery#1.7.2"
   },
   "devDependencies": {
     "chai": "~3.4.0",
     "mocha": "~2.3.3"
-  }
+  },
+  "authors": "lorio",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true 
 }

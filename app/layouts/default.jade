@@ -21,8 +21,12 @@ html.no-js(lang='en')
     // endbuild
 
     // build:js scripts/vendor/modernizr.js
-    script(src='../bower_components/modernizr/modernizr.js')
+    script(src='../bower_components/modernizr/modernizr.js')  
     // endbuild
+
+    // build:js scripts/vendor/jquery/jquery.min.js
+    script(src='../bower_components/jquery/jquery.min.js')
+    //endbuild
 
   body
     | <!--[if lt IE 10]>
@@ -32,7 +36,18 @@ html.no-js(lang='en')
       .container
         h1.text-center John Driscoll Illig
         
-        h5: a(href='#') contact
+        h5
+          a.modalbox(href='#inline') contact
+            // hidden inline form
+    #inline
+      h2 Send a Message
+      form#contact(name='contact', action='#', method='post')
+        label(for='email') Your Email
+        input#email.txt(type='email', name='email')
+        br
+        label(for='msg') Enter your message
+        textarea#msg.txtarea(name='msg')
+        button#send Send Email
 
     block content
 

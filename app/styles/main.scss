@@ -10,6 +10,9 @@
 @import "partials/type";
 @import "partials/layout";
 @import "partials/utility";
+@import "partials/fancybox";
+@import "partials/modal";
+
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -67,6 +70,10 @@ footer {
 		.container {
 			width: 100%;
 		}
+		nav h5,
+		header h5 {
+			top: auto;
+		}
 		img {
 			width: 100%;
 			height: auto;
@@ -79,6 +86,14 @@ footer {
 		.one-half,
 		.one-third {
 			width: 100%;
+		}
+		.one-half {
+			padding-left: 1em;
+			padding-bottom: 1em;
+		}
+		.one-third > figcaption {
+			padding-right:2em;
+			padding-bottom: 1em;
 		}
 }
 /* @media all and (min-width: 600) and (max-width: 980px) {
