@@ -2,7 +2,7 @@
   "name": "johnilligart",
   "main": [
     "scripts/main.js",
-    "styles/main.scss"
+    "styles/main.css"
     ],
   "dependencies": {
     "modernizr": "~2.8.1",
