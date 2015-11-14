@@ -46,7 +46,12 @@ small {
 .text-small {
   font-size: 12px;
 }
-
+.icon {
+  width: 1em;
+  //height: 1em;
+  border: none;
+  margin-bottom: -.1em;
+}
 pre {
   margin-top: 0;
   margin-bottom: 0;

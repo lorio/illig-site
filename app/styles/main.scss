@@ -65,36 +65,45 @@ footer {
 }
 //////// media queries /////////
 @media all and (max-width: 600px) {
-		body,
-		header,
-		.container {
-			width: 100%;
+	body,
+	header,
+	.container {
+		width: 100%;
+	}
+	nav h5,
+	header h5 {
+		top: auto;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	.column {
+		float: none;
+		width: 100%;
+		padding-left: 2.5em;
+	}
+	.one-half,
+	.one-third {
+		width: 100%;
+	}
+	.one-half {
+		padding-left: 1em;
+		padding-bottom: 1em;
+	}
+	.one-third { 
+		figure {
+			figcaption {
+				padding-right:2em;
+				padding-bottom: 1em;
+			}
 		}
-		nav h5,
-		header h5 {
-			top: auto;
-		}
-		img {
-			width: 100%;
-			height: auto;
-		}
-		.column {
-			float: none;
-			width: 100%;
-			padding-left: 2.5em;
-		}
-		.one-half,
-		.one-third {
-			width: 100%;
-		}
-		.one-half {
-			padding-left: 1em;
-			padding-bottom: 1em;
-		}
-		.one-third > figcaption {
-			padding-right:2em;
-			padding-bottom: 1em;
-		}
+	}
+	.footer,
+	footer {
+		position: relative;
+		margin-left: 0;
+	}
 }
 /* @media all and (min-width: 600) and (max-width: 980px) {
 	header {
